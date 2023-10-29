@@ -57,7 +57,7 @@ class App extends React.Component {
             <div className="App" style={{backgroundColor: 'white', minHeight: '100vh'}}>
                 {/* <h1>Watch a Video</h1> */}
                 {/* <AnimationComponent /> */}
-                <img src="animation4.gif"  alt="animation" /> 
+                <img src="animation5.gif"  alt="animation" /> 
                 {/* <button onClick={() => window.open(this.state.videoLink, '_blank')}>
                     Click to Watch a Video */}
                 {/* </button> */}
