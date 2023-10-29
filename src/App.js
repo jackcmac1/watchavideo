@@ -1,34 +1,12 @@
 /* global createjs, AdobeAn */
-// import logo from './logo.svg';
-// import './App.css';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-import React from 'react';
+import React, { Component } from 'react';
 import AnimationComponent from './components/AnimationComponent';
 import './App.css'; // if you have custom styles
+import { useMediaQuery } from 'react-responsive'; 
+import MyComponent from './MyComponent';
 
-class App extends React.Component {
+class App extends Component {
     constructor(props) {
         super(props);
         // Assuming you have a method to fetch or generate a random YouTube link
@@ -51,19 +29,14 @@ class App extends React.Component {
             console.error("An error occurred while fetching video link:", error);
         }
     }
-
+    
+    
     render() {
-        return (
-            <div className="App" style={{backgroundColor: 'white', minHeight: '100vh'}}>
-                {/* <h1>Watch a Video</h1> */}
-                {/* <AnimationComponent /> */}
-                <img src="animation5.gif"  alt="animation" /> 
-                {/* <button onClick={() => window.open(this.state.videoLink, '_blank')}>
-                    Click to Watch a Video */}
-                {/* </button> */}
-            </div>
-        );
+        
+
+            return <MyComponent />;
+        }
     }
-}
+
 
 export default App;
